@@ -13,6 +13,27 @@
 }
 
 body {
+
+  background: url(../images/logo-rolling-background.png) round;
+  background-size: 32px 32px;
+}
+
+/* navbar movile */
+.color-todo-list{
+  color: #726ce7;
+}
+.color-calendar{
+  color: #45b2d9;
+}
+.color-reminders{
+  color:#f2d653
+}
+.color-planning{
+  color: #8952ba;
+}
+.btn-outline-success{
+  border: 1px solid var(--second-color);
+
   background: url(../images/logo-rolling-background-2.png) repeat;
   background-size: 250px auto;
 }
