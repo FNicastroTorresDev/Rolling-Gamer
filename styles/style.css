@@ -13,12 +13,44 @@
 }
 
 body {
-
-  background: url(../images/logo-rolling-background.png) round;
-  background-size: 32px 32px;
+  background: url(../images/logo-rolling-background-2.png) repeat;
+  background-size: 150px auto;
 }
 
-/* navbar movile */
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px auto;
+}
+
+.hero-image {
+  background-image: url(../images/image-hero-mobile.png);
+  background-size: cover;
+  width: 380px;
+  height: 285px;
+}
+
+.hero-description {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.btn-suscribe {
+  background-color: var(--third-color);
+  color: var(--main-bg-color);
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* navbar mobile */
 .color-todo-list{
   color: #726ce7;
 }
@@ -33,44 +65,60 @@ body {
 }
 .btn-outline-success{
   border: 1px solid var(--second-color);
-
-  background: url(../images/logo-rolling-background-2.png) repeat;
-  background-size: 250px auto;
+  background-image: url(../images/logo-rolling-background-2.png);
+  background-size: cover;
 }
 
 footer {
   background-color: var(--main-bg-color);
-  position: fixed;
+  margin-top: 50px;
   bottom: 0;
   width: 100%;
-  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer .container {
+footer .container1 {
   display: flex;
-  width: 60%;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 30px auto;
+}
+
+footer img {
+  margin: 8px auto;
 }
 
 footer h4 {
   color: var(--second-color);
 }
 
-@media screen and (max-width: 576px) { 
-  footer {
-    height: 250px;
+@media screen and (min-width: 768px) {
+  .hero-image {
+    background-image: url(../images/image-hero-desktop.png);
+    background-size: cover;
+    margin-right: 80px;
+    width: 400px;
+    height: 533px;
   }
-  footer .container {
-    flex-direction: column;
+  h1 {
+    font-size: 4rem;
+  }
+  .hero-description {
+    text-align: left;
+    margin: auto 40px;
+  }
+  .hero-description p {
+    font-size: 1.4rem;
+    margin: 50px auto;
+  }
+  footer .container1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
     margin-bottom: 40px;
-  }
-  footer img {
-    margin: 8px auto;
   }
 }
